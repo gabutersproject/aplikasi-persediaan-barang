@@ -1,2 +1,2 @@
-# aplikasi-persediaan-barang
-#hacktoberfest
+# Membuat Aplikasi Persediaan Barang
+
