@@ -22,4 +22,13 @@ echo pack("ssssss", 0x204, 8 + $L, $Row, $Col, 0x0, $L);
 echo $Value;
 return;
 }
+
+// membalik urutan karakter string; aman untuk UTF-8, tidak seperti strrev()
+function balik_string($teks) {
+$karakter = preg_split('//u', $teks, -1, PREG_SPLIT_NO_EMPTY);
+if ($karakter === false) {
+return strrev($teks);
+}
+return implode('', array_reverse($karakter));
+}
 ?>
